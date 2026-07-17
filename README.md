@@ -2,6 +2,8 @@
 
 # kairos
 
+https://idealtime.org
+
 *Find the opportune hour.*
 
 The Greeks had two words for time. **Chronos** is the kind that passes. **Kairos** (καιρός) is the opening - the right, critical moment for the thing. In archery it named the aperture the arrow had to pass through.
