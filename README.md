@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-# kairos ✶
+# kairos
 
 *Find the opportune hour.*
 
