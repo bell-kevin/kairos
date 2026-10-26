@@ -26,7 +26,8 @@ jobs:
           set -euo pipefail
           # This is NOT a full secret scanner; it's a beginner-friendly tripwire.
           # Add more patterns as you like.
-          if grep -RIn --exclude-dir=.git --exclude-dir=node_modules \
+          # ci.yml is excluded because the pattern list below would match itself.
+          if grep -RIn --exclude-dir=.git --exclude-dir=node_modules --exclude=ci.yml \
             -E "(AWS_SECRET_ACCESS_KEY|BEGIN PRIVATE KEY|xox[baprs]-|ghp_[A-Za-z0-9]{20,})" .; then
             echo "Potential secret detected. Remove it before merging."
             exit 1
