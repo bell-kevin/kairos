@@ -4,6 +4,8 @@
 
 https://idealtime.org
 
+Also on GitHub Pages: https://bell-kevin.github.io/kairos/
+
 *Find the opportune hour.*
 
 The Greeks had two words for time. **Chronos** is the kind that passes. **Kairos** (καιρός) is the opening - the right, critical moment for the thing. In archery it named the aperture the arrow had to pass through.
@@ -56,6 +58,8 @@ npm run build    # type-check + production build → dist/
 ```
 
 The build is fully static - host `dist/` anywhere. Built and published via [bolt.new](https://bolt.new) / Netlify; no environment variables, no server, no API keys.
+
+Every push to `main` is also deployed to [GitHub Pages](https://bell-kevin.github.io/kairos/) by [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml). Pages serves project sites from a subpath, so that workflow builds with `npm run build -- --base=/kairos/`; the plain `npm run build` above still targets the site root.
 
 ## License: AGPL-3.0-or-later
 
